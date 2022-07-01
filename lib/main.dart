@@ -1,3 +1,4 @@
+import 'package:codepur/pages/about_page.dart';
 import 'package:codepur/pages/home_page.dart';
 import 'package:codepur/pages/login_page.dart';
 import 'package:codepur/widgets/themes.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => LoginPage(),
         MyRouter.homeRoute: (context) => HomePage(),
+        MyRouter.aboutRoute: (context) => AboutPage(),
         MyRouter.loginPageRoute: (context) => LoginPage()
       },
     );

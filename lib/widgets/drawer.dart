@@ -1,3 +1,4 @@
+import 'package:codepur/utils/MyRouter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +26,7 @@ class MyDrawer extends StatelessWidget {
                 )
             ),
             ListTile(
+              onTap:() {Navigator.pushNamed(context, MyRouter.homeRoute);},
               leading: Icon(
                 CupertinoIcons.home,
                 color: Colors.white,
@@ -35,11 +37,11 @@ class MyDrawer extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                     fontWeight: FontWeight.bold
-
                 ),
               ),
             ),
         ListTile(
+          onTap:() {Navigator.pushNamed(context, MyRouter.aboutRoute);},
           leading: Icon(
             CupertinoIcons.profile_circled,
             color: Colors.white,
